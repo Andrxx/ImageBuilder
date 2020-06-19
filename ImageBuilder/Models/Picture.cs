@@ -24,7 +24,7 @@ namespace ImageBuilder.Models
         public string fontType { get; set; }
         public int fontSize { get; set; }
         public int textWidth { get; set; }
-        public int textLayer { get; set; }
+        public int textLayer { get; set; } = int.MinValue;
 
         //картинки и логотипы
         public string path { get; set; }
@@ -33,7 +33,7 @@ namespace ImageBuilder.Models
         public double opacity { get; set; }
         public int imgWidth { get; set; }
         public int imgHeight { get; set; }
-        public int imgLayer { get; set; }
+        public int imgLayer { get; set; } = int.MinValue;
 
         //линии
         public int lineX1 { get; set; }
@@ -42,7 +42,7 @@ namespace ImageBuilder.Models
         public int lineY2 { get; set; }
         public int thickness { get; set; }
         public Color lineColor { get; set; }
-        public int lineLayer { get; set; }
+        public int lineLayer { get; set; } = int.MinValue;
 
         //спец
         public string specsType { get; set; }
@@ -50,7 +50,7 @@ namespace ImageBuilder.Models
         public int specsX { get; set; }
         public int specsY { get; set; }
         public Color specsColor { get; set; }
-        public int specsLayer { get; set; }
+        public int specsLayer { get; set; } = int.MinValue;
 
     }
 }
